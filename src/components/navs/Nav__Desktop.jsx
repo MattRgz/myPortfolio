@@ -10,24 +10,36 @@ const NavDesktop = () => {
             <div style={{display:'flex',flexGrow:'3', justifyContent:'center',alignItems:'end', marginRight:'14%'}}>
                 <ul className='MainLinksContainer__Desktop'>
                     <li className='ItemList__Desktop'>
-                        <p className='linkContainer'>
-                            <a href="#">Me</a>
-                        </p>
+                        <a href="#">
+                            <p className='linkContainer'>
+                                Me
+                            </p>
+                        </a>
+                        <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <p className='linkContainer'>
-                            <a href="#">Formation</a>
-                        </p>
+                        <a href="#">
+                            <p className='linkContainer'>
+                                Formation
+                            </p>
+                        </a>
+                        <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <p className='linkContainer'>
-                            <a href="#">Technologies</a>
-                        </p>
+                        <a href="#">
+                            <p className='linkContainer'>
+                            Technologies
+                            </p>
+                        </a>
+                        <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <p className='linkContainer'>
-                            <a href="#">Otros links</a>
-                        </p>
+                        <a href="#">
+                            <p className='linkContainer'>
+                            Otros links
+                            </p>
+                        </a>
+                        <span className='bottomBorder'></span>
                     </li>
                 </ul>
             </div>

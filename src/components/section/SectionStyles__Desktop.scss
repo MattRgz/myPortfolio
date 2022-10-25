@@ -1,33 +1,80 @@
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+.vid{
+  width: 100%;
+  height: 100vh;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.vid .texto{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vid .textBox{
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 550px;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+
+.textBox h1{
+  font-size:7em;
+  margin-bottom: 15px;
+}
+.textBox h2{
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+.textBox h3{
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+.textBox h4{
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.texto .cursor{
+  top: 0;
+  left: 0;
+  height: 45%;
+  background-color: white;
+  width: 4px;
+}
+
+.texto img{
+  margin-left: 15em;
+  scale: 1.5;
+  border-radius: 600px;
+}
+
+@media (max-width: 1290px){
+  .texto img{
+    display: none;
   }
-  
-  /* Add some content at the bottom of the video/page */
-  .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+  .texto .cursor{
+    display: none;
   }
-  
-  /* Style the button used to pause/play the video */
-  #myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  #myBtn:hover {
-    background: #ddd;
-    color: black;
-  }
+}

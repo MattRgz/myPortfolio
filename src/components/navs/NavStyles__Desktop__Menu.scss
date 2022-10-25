@@ -1,5 +1,5 @@
 .linkContainer{
-    width: 140px;
+    // width: 140px;
     bottom: 0;
     height: 100%;
     display: flex;
@@ -7,18 +7,31 @@
     justify-content: center;
 }
 
-.linkContainer:hover{
-    background: -webkit-linear-gradient(to bottom,  #1e1e1e 02%,grey 50%); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #1e1e1e 02%, grey 50%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border: none;
-    border-radius: 15px 15px 0px 0px;
-    box-shadow: 1px 0px 1px #363535 ;
+.ItemList__Desktop:hover{
+    // background: -webkit-linear-gradient(to bottom,  #1e1e1e 02%,grey 50%); /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to bottom, #1e1e1e 02%, grey 50%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // border-radius: 15px 15px 0px 0px;
+    // box-shadow: 1px 0px 1px #363535 ;
+        // border-bottom: wheat 5px solid;
+        border-bottom: 3px solid white;
+        border-radius: 3px;
+        box-shadow: 0px 1px 0px white;
 
 }
+
+.ItemList__Desktop .bottomBorder{
+    // width: 40%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+
 .ItemList__Desktop{
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    justify-content: center;
+    justify-content: end;
     height: 40px;
 }
 
