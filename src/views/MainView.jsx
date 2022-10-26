@@ -4,34 +4,39 @@ import Nav__Mobile from '../components/navs/Nav__Mobile';
 import Main__Desktop from '../components/main/Main__Desktop';
 import MainViewStyle from './viewStyles/MainViewStyle.scss';
 import SectionDesktop from '../components/section/Section__Desktop';
+import SectionMobile from '../components/section/Section__Mobile';
 
 const MainView = () => {
     return (
         <div>
-            <section className="desktop__view" style={{height:'100vh'}}>
-                <SectionDesktop/>
-            </section>
-            <header style={{position:'sticky', top:'0px'}}>
-                <div className="desktop__view">
-                <Nav__Desktop/>
-                </div>
-                <div className="mobile__view">
-                <Nav__Mobile/>
-                </div>
-            </header>
-            <main>
-                <div className="desktop__view">
+            <div className="desktop__view">
+                <section style={{height:'100vh'}}>
+                    <SectionDesktop/>
+                </section>
+                <header style={{position:'sticky', top:'0px'}}>
+                    <Nav__Desktop/>
+                </header>
+                <main>
                     <Main__Desktop/>
-                </div>
-                <div className="mobile__view">
-                </div>
-            </main>
-            <footer>
-                <div className="desktop__view">
-                </div>
-                <div className="mobile__view">
-                </div>
-            </footer>
+                </main>
+                <footer>
+
+                </footer>
+            </div>
+            <div  className="mobile__view">
+                <header style={{position:'sticky', top:'0px'}}>
+                    <Nav__Mobile/>
+                </header>
+                <section style={{position:"absolute"}}>
+                    <SectionMobile/>
+                </section>
+                <main>
+
+                </main>
+                <footer>
+
+                </footer>
+            </div>
         </div>
     );
 }

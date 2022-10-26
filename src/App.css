@@ -19,6 +19,8 @@ a{
   color:rgb(255, 234, 206)
 }
 
+
+
 @media (max-width: 767px){
   .desktop__view{
     display: none;
