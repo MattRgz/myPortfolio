@@ -1,9 +1,9 @@
 import React from 'react';
-import SectionStyles__Mobile from './SectionStyles__Mobile.scss';
+import HeaderStyles__Mobile from './HeaderStyles__Mobile.scss';
 import fondo from "../videos/fondo1.mp4";
 import profileImg from "../images/profileImg.png"
 
-const SectionMobile = () => {
+const HeaderMobile = () => {
     return (
         <div className='vid'>
             <div className="overlayMobile"></div>
@@ -14,7 +14,7 @@ const SectionMobile = () => {
                     <h4>My name is</h4> 
                     <h2>Matías Reyes,</h2>
                     <h3>I´m a Full-Stack developer</h3> 
-                    <h4>actually studing to become a  </h4>
+                    <h4>currently studing to become a  </h4>
                     <h3>TIC Engineer!</h3>
                 </div>
             </div>
@@ -24,4 +24,4 @@ const SectionMobile = () => {
     );
 }
 
-export default SectionMobile;
+export default HeaderMobile;

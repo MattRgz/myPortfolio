@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainDesktop = () => {
     return (
-        <div style={{height:'100vh', backgroundColor:'grey'}}>
+        <div id='proyectsId' style={{height:'100vh', backgroundColor:'grey'}}>
             Hola
         </div>
     );
