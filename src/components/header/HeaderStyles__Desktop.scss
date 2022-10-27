@@ -1,6 +1,6 @@
 .vid{
   width: 100%;
-  height: 100vh;
+  height: 85vh;
 }
 
 .videoDesktop{
@@ -38,22 +38,53 @@
   align-items: start;
   text-align: start;
 }
+.firstText{
+  animation: chargedMainText 1s forwards;
+  animation-delay: 1s;
 
+}
+.secondText{
+  animation: chargedMainText 1s forwards;
+  animation-delay: 2s;
+}
+.thirdText{
+  animation: chargedMainText 1s forwards;
+  animation-delay: 2s;
+}
+.fourText{
+  animation: chargedMainText 1s forwards;
+  animation-delay: 3s;
+}
+.fiveText{
+  animation: chargedMainText 1s forwards;
+  animation-delay: 4.2s;
+}
+.sixtText{
+  animation: chargedMainText 1s forwards;
+  animation-delay: 4.2s;
+}
 .textBox h1{
   font-size:7em;
   margin-bottom: 15px;
+  opacity: 0;
 }
+
 .textBox h2{
   font-size: 4em;
   margin-bottom: 15px;
+  opacity: 0;
+
 }
 .textBox h3{
   font-size: 3em;
   margin-bottom: 15px;
+  opacity: 0;
 }
 .textBox h4{
   font-size: 2em;
   margin-bottom: 15px;
+  opacity: 0;
+
 }
 
 .texto .cursor{
@@ -88,3 +119,11 @@
   }
 }
 
+@keyframes chargedMainText {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}

@@ -1,0 +1,72 @@
+.proyectContainer{
+    height: 100vh;
+    z-index: -1;
+}
+
+
+.proyectAtLeft{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    z-index: -1;
+}
+.proyectAtLeft p{
+    margin-right: 300px;
+}
+.proyectAtLeft img{
+    
+}
+.proyectAtRight{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    z-index: -1;
+}
+.proyectAtRight p{
+    margin-left: 300px;
+}
+.proyectAtRight img{
+    
+}
+
+.entryFromLeft{
+
+    animation: animatedLentry 2s forwards;
+}
+.entryFromRight{
+    
+    animation: animatedRentry 2s forwards;
+}
+
+@keyframes animatedLentry {
+    0%{
+        opacity: 0;
+        margin-left: 20%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        scale: 1;
+        margin-left: 30%;
+    }
+}
+
+@keyframes animatedRentry {
+    0%{
+        opacity: 0;
+        margin-right: 20%;
+    }
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        scale: 1;
+        margin-right: 30%;
+    }
+}

@@ -11,7 +11,7 @@ const NavDesktop = () => {
             <div style={{display:'flex',flexGrow:'3', justifyContent:'center',alignItems:'end', marginRight:'14%'}}>
                 <ul className='MainLinksContainer__Desktop'>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={0} duration={500}>
+                        <Link style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={-100} duration={500}>
                             <p className='linkContainer'>
                                 Home
                             </p>
@@ -29,7 +29,7 @@ const NavDesktop = () => {
                     <li className='ItemList__Desktop'>
                         <Link style={{cursor:"pointer"}}  to="technologiesId" spy={true} smooth={true} offset={-100} duration={500}>
                             <p className='linkContainer'>
-                            Technologies
+                                Technologies
                             </p>
                         </Link>
                         <span className='bottomBorder'></span>

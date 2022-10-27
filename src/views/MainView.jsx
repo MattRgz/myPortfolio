@@ -5,30 +5,32 @@ import Main__Desktop from '../components/main/Main__Desktop';
 import MainViewStyle from './viewStyles/MainViewStyle.scss';
 import HeaderDesktop from '../components/header/Header__Desktop';
 import HeaderMobile from '../components/header/Header__Mobile';
+import TechnologiesDesktop from '../components/sections/Technologies__Desktop';
+
 
 const MainView = () => {
     return (
         <div>
             <div className="desktop__view">
-                <header style={{height:'100vh'}}>
-                    <HeaderDesktop/>
-                </header>
                 <nav style={{position:'sticky', top:'0px'}}>
                     <Nav__Desktop/>
                 </nav>
-                <main>
+                <header id='homeId' style={{height:'100vh'}}>
+                    <HeaderDesktop/>
+                </header>
+                <main id='proyectsId' style={{height:'100vh'}}>
                     <Main__Desktop/>
                 </main>
                 <section id='technologiesId' style={{height:'100vh'}}>
-
+                    <TechnologiesDesktop/>
                 </section>
-                <section id='formationId'  style={{height:'100vh', background:"gold"}}>
+                <section id='formationId'  style={{height:'100vh', background:"darkgold"}}>
 
                 </section>
                 <section id='contactId'  style={{height:'100vh'}}>
 
                 </section>
-                <footer style={{height:'20vh', background:"gold"}}>
+                <footer style={{height:'20vh', background:"darkgold"}}>
 
                 </footer>
             </div>
