@@ -1,11 +1,11 @@
 import React from 'react';
 import TechnologiesStyles__Desktop from "./TechnologiesStyles__Desktop.scss";
-import reactIcon from "../images/reactIcon.png";
-import expressIcon from "../images/expressIcon.png"
-import mongoDBIcon from "../images/mongoDBIcon.png";
-import nodeJsIcon from "../images/nodeJsIcon.png";
-import pythonIcon from "../images/pythonIcon.png";
-import pNetIcon from "../images/pNetIcon.png";
+import reactIcon from "../../assets/images/reactIcon.png";
+import expressIcon from "../../assets/images/expressIcon.png"
+import mongoDBIcon from "../../assets/images/mongoDBIcon.png";
+import nodeJsIcon from "../../assets/images/nodeJsIcon.png";
+import pythonIcon from "../../assets/images/pythonIcon.png";
+import pNetIcon from "../../assets/images/pNetIcon.png";
 import { useInView  } from "react-intersection-observer";
 
 const TechnologiesDesktop = () => {
@@ -16,7 +16,7 @@ const TechnologiesDesktop = () => {
     return (
         <div className='TechnologiesContainer'>
             <div ref={firstMainText} className={`${"TechnologiesMainText"} ${firstMainTextonView?"entryFromUp":""}`}>
-                <h4>Technologies that I feel really comfortable:</h4>
+                <h4>Technologies I perform my best with:</h4>
             </div>
             <div ref={firstTechnologiesCardContainer} className={`${"TechnologiesCardContainer"} ${firstTechnologiesCardContainerOnView?"entryFromDown":""}`}>
                 <div className='TechnologiesCard'>

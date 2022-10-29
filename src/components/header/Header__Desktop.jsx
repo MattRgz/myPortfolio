@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderStyles__Desktop from './HeaderStyles__Desktop.scss';
-import fondo from "../videos/fondo1.mp4";
-import profileImg from "../images/profileImg.png";
+import fondo from "../../assets/videos/fondo1.mp4";
+import profileImg from "../../assets/images/profileImg.png";
 
 const HeaderDesktop = () => {
     return (
