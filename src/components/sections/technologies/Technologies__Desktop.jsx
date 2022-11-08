@@ -1,11 +1,11 @@
 import React from 'react';
 import TechnologiesStyles__Desktop from "./TechnologiesStyles__Desktop.scss";
-import reactIcon from "../../assets/images/reactIcon.png";
-import expressIcon from "../../assets/images/expressIcon.png"
-import mongoDBIcon from "../../assets/images/mongoDBIcon.png";
-import nodeJsIcon from "../../assets/images/nodeJsIcon.png";
-import pythonIcon from "../../assets/images/pythonIcon.png";
-import pNetIcon from "../../assets/images/pNetIcon.png";
+import reactIcon from "../../../assets/images/reactIcon.png";
+import expressIcon from "../../../assets/images/expressIcon.png"
+import mongoDBIcon from "../../../assets/images/mongoDBIcon.png";
+import nodeJsIcon from "../../../assets/images/nodeJsIcon.png";
+import pythonIcon from "../../../assets/images/pythonIcon.png";
+import pNetIcon from "../../../assets/images/pNetIcon.png";
 import { useInView  } from "react-intersection-observer";
 
 const TechnologiesDesktop = () => {

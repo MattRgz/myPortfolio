@@ -18,7 +18,7 @@ const HeaderMobile = () => {
                     <h3>TIC Engineer!</h3>
                 </div>
             </div>
-            <video className='videoMobile' src={fondo} autoPlay loop muted/>
+            <video className='videoMobile' src={fondo} autoPlay loop muted disablePictureInPicture/>
             
         </div>
     );

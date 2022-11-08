@@ -19,7 +19,7 @@ const HeaderDesktop = () => {
                 </div> <span className='cursor'></span>
                 <img src={profileImg} alt="Profile Image" />
             </div>
-            <video className='videoDesktop' src={fondo} autoPlay loop muted/>
+            <video className='videoDesktop' src={fondo} autoPlay loop muted disablePictureInPicture/>
         </div>
     );
 }

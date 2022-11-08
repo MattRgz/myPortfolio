@@ -5,7 +5,8 @@ import Main__Desktop from '../components/main/Main__Desktop';
 import MainViewStyle from './viewStyles/MainViewStyle.scss';
 import HeaderDesktop from '../components/header/Header__Desktop';
 import HeaderMobile from '../components/header/Header__Mobile';
-import TechnologiesDesktop from '../components/sections/Technologies__Desktop';
+import TechnologiesDesktop from '../components/sections/technologies/Technologies__Desktop';
+import FormationDesktop from '../components/sections/formation/Formation__Desktop';
 
 
 const MainView = () => {
@@ -25,7 +26,7 @@ const MainView = () => {
                     <TechnologiesDesktop/>
                 </section>
                 <section id='formationId'  style={{height:'100vh', background:"darkgold"}}>
-
+                    <FormationDesktop/>
                 </section>
                 <section id='contactId'  style={{height:'100vh'}}>
 

@@ -4,7 +4,7 @@ import {Link} from "react-scroll";
 
 const NavDesktop = () => {
     return (
-        <div style={{display:'flex', backgroundColor:'rgba(150,150,150,0.2)', position:'relative',right:'0', left:'0',height:'100px'}}>
+        <div style={{display:'flex', backgroundColor:'rgba(150,150,150,0.2)', position:'relative',right:'0', left:'0',height:'100px', zIndex:"3"}}>
             <div style={{display:'flex', flexGrow:'1', justifyContent:'center', alignItems:'end'}}>
                 <p style={{marginBottom:'10px'}}>LOGO</p>
             </div>

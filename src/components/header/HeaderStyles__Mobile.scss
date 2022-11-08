@@ -69,18 +69,17 @@
 
 .textoMobile .imgMobile{
   border-radius: 600px;
-  animation: profilePictureMobile 1s infinite alternate;
+  animation: profilePictureMobile 1s ;
 }
 
 
 @keyframes profilePictureMobile{
-  0%{
-    width: 50%;
-    margin-bottom: 30px;
+  50%{
+    scale: 1.15;
+    margin-bottom: 10px;
   }
   100%{
-    width: 55%;
-    margin-bottom: 40px;
+    scale: 1;
   }
 }
 
