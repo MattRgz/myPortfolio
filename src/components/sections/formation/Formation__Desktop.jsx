@@ -50,7 +50,7 @@ const FormationDesktop = () => {
                 </div>
             </div>
             <div className='FormationEndTextContainer'>
-                <h3> 🤓 I considere myself a self-taught person, reason why I'm constantly improving my knowledgments in some react libraries, and Frontend tips by watching a lot of videos 🤓</h3>
+                <h4> 🤓 I considere myself a self-taught person, reason why I'm constantly improving my knowledgments in some react libraries, and Frontend tips. 🤓 </h4>
             </div>
         </div>
     );
