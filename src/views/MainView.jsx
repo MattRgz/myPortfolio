@@ -7,6 +7,7 @@ import HeaderDesktop from '../components/header/Header__Desktop';
 import HeaderMobile from '../components/header/Header__Mobile';
 import TechnologiesDesktop from '../components/sections/technologies/Technologies__Desktop';
 import FormationDesktop from '../components/sections/formation/Formation__Desktop';
+import ContactDesktop from '../components/sections/contact/Contact__Desktop';
 
 
 const MainView = () => {
@@ -29,7 +30,7 @@ const MainView = () => {
                     <FormationDesktop/>
                 </section>
                 <section id='contactId'  style={{height:'100vh'}}>
-
+                    <ContactDesktop/>
                 </section>
                 <footer style={{height:'20vh', background:"darkgold"}}>
 
