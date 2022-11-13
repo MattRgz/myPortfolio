@@ -36,4 +36,31 @@
     object-fit: cover;
     scale: 1.2;
 }
+.showForm{
+    
+    animation: showFormAnimation 1s forwards;
+}
+.hideForm{
+    animation: hideFormAnimation 1s forwards;
+    display: none;
+}
 
+@keyframes showFormAnimation {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        display: relative;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes hideFormAnimation {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
