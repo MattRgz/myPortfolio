@@ -10,11 +10,13 @@ function TechSphere(props) {
   const ref = useRef()
   useFrame((state, delta) => {
       (ref.current.rotation.y += 0.005);
-      
-      
   })
   return (
-    <primitive ref= {ref} object={gltf.scene} scale={5}/>
+    <primitive
+      ref= {ref} 
+      object={gltf.scene} 
+      scale={5}
+      />
   )
 }
   

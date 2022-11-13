@@ -14,7 +14,7 @@ const MainView = () => {
     return (
         <div>
             <div className="desktop__view">
-                <nav style={{position:'sticky', top:'0px',background:"white"}}>
+                <nav style={{position:'sticky', top:'0px',background:"white",zIndex:"1"}}>
                     <Nav__Desktop/>
                 </nav>
                 <header id='homeId' style={{height:'88vh',background:"white",position:"relative", zIndex:"-1"}}>
@@ -29,7 +29,7 @@ const MainView = () => {
                 <section id='formationId'  style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
                     <FormationDesktop/>
                 </section>
-                <section id='contactId'  style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
+                <section id='contactId'  style={{height:'92vh',position:"relative", background:"white"}}>
                     <ContactDesktop/>
                 </section>
                 <footer style={{height:'20vh', background:"darkgold"}}>

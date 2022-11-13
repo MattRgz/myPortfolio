@@ -1,0 +1,38 @@
+.contactContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+}
+.letsTalkText{
+    font-size: 85px;
+}
+
+.contactContainer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    position: relative;
+}
+.contactContainer li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    position: relative;
+    
+}
+
+.contactContainer img{
+    object-fit: cover;
+    width: 50px;
+}
+.contactContainer img:hover{
+    object-fit: cover;
+    scale: 1.2;
+}
+

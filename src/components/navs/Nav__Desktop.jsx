@@ -45,7 +45,7 @@ const NavDesktop = () => {
                         <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}}  to="contactId" spy={true} smooth={true} offset={-100} duration={500}>
+                        <Link style={{cursor:"pointer"}}  to="contactId" spy={true} smooth={true} offset={-80} duration={500}>
                             <p className='linkContainer'>
                                 Contact
                             </p>

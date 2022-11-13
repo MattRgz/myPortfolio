@@ -1,11 +1,12 @@
 .FormationContainer{
     width: 100%;
-    height: 50%;
+    height: 100%;
     position: relative;
     z-index: -1;
 }
 .FormationMainText{
-    height: 40%;
+    opacity: 0;
+    height: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,7 +21,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 .iFrameBackground{
     position: absolute;
@@ -35,6 +36,7 @@
     margin-bottom: 25px;
 }
 .formationCards{
+    opacity: 0;
     width: 20%;
 }
 .cardSubtitle{
@@ -42,11 +44,81 @@
     text-align: center;
 }
 .FormationEndTextContainer{
+    display: flex;
+    opacity: 0;
     width: 100%;
-    height: 100%;
+    height: 20%;
     justify-content: center;
-    margin-top: 60px;
+    align-items: center;
 }
+.formationTitleOnView{
+    animation: fade 2s forwards;
+}
+.formationCardOneOnView{
+    animation: CardOneFade 3s forwards;
+}
+.formationCardTwoOnView{
+    animation: CardTwoFade 3s forwards;
+}
+.formationCardThreeOnView{
+    animation: CardThreeFade 3s forwards;
+}
+.formationEndtextOnView{
+    animation: formationEndTextAnimation 2s forwards;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes CardOneFade {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes CardTwoFade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes CardThreeFade {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+@keyframes formationEndTextAnimation {
+    0%{
+        opacity: 0;
+        scale: 0.8;
+    }
+    100%{
+        opacity: 100%;
+        scale: 1;
+    }
+}
+
+
 // .iFrameHoverLink{  ACA ESTOY INTENTANDO HACER EL HOVER PARA DESCARGAR EL ARCHIVO >:C
 //     background-color: black;
 //     width: 284.5px;
