@@ -3,20 +3,20 @@ import React, { Suspense, useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import {OrbitControls} from "@react-three/drei"
+// import {OrbitControls} from "@react-three/drei"
 
 function TechSphere(props) {
-    const gltf = useLoader(GLTFLoader, '/TechSphere/TechSphere.gltf')
-    const ref = useRef()
-    useFrame((state, delta) => {
-        (ref.current.rotation.y += delta-0.02);
-        (ref.current.rotation.x += delta-0.015)
-    })
-    return (
-      <primitive ref= {ref} object={gltf.scene} scale={5}/>
-    )
-  }
-
+  const gltf = useLoader(GLTFLoader, '/TechSphere/TechSphere.gltf')
+  const ref = useRef()
+  useFrame((state, delta) => {
+      (ref.current.rotation.y += 0.005);
+      
+      
+  })
+  return (
+    <primitive ref= {ref} object={gltf.scene} scale={5}/>
+  )
+}
   
 // ACA CREO EL ITEM Y TODAS SUS COSAS ADJUNTAS (ANIMACIONES, INTERACCION, ETC
     // function Box(props) {
@@ -47,14 +47,11 @@ function TechSphere(props) {
 
 export default function ThreeScene() {
     return (
-    <Canvas camera={{fov: 50,position:[0,0,2]}}>
-        <ambientLight intensity={0.2} color="white" />
-        <directionalLight color="white" position={[1, 1, 1]} />
-        <spotLight position={[10,10,10]} angle={0.15} penumbra={1}/>
-        <pointLight position={[-10,-10,-10]} />
+    <Canvas camera={{fov: 50,position:[0,0,1]}}>
+        <ambientLight intensity={0.1} color="white" />
+        <directionalLight color="white" position={[0, 1, 10]} />
             <Suspense>
-                <OrbitControls target0={[0,0,0]} />
-                <TechSphere position={[0,0,0]} scale={0.5}/>
+                <TechSphere position={[0,0,0]} scale={2}/>
             </Suspense>
       </Canvas>
       

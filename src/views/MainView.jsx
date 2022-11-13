@@ -14,22 +14,22 @@ const MainView = () => {
     return (
         <div>
             <div className="desktop__view">
-                <nav style={{position:'sticky', top:'0px'}}>
+                <nav style={{position:'sticky', top:'0px',background:"white"}}>
                     <Nav__Desktop/>
                 </nav>
-                <header id='homeId' style={{height:'100vh'}}>
+                <header id='homeId' style={{height:'88vh',background:"white",position:"relative", zIndex:"-1"}}>
                     <HeaderDesktop/>
                 </header>
-                <main id='proyectsId' style={{height:'100vh'}}>
+                <main id='projectsId' style={{height:'90vh',background:"white",position:"relative", zIndex:"-1"}}>
                     <Main__Desktop/>
                 </main>
-                <section id='technologiesId' style={{height:'100vh'}}>
+                <section id='technologiesId' style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
                     <TechnologiesDesktop/>
                 </section>
-                <section id='formationId'  style={{height:'100vh', background:"darkgold"}}>
+                <section id='formationId'  style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
                     <FormationDesktop/>
                 </section>
-                <section id='contactId'  style={{height:'100vh'}}>
+                <section id='contactId'  style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
                     <ContactDesktop/>
                 </section>
                 <footer style={{height:'20vh', background:"darkgold"}}>

@@ -45,6 +45,7 @@ const FormationDesktop = () => {
                         Currently, I´m student at San Sebastian University. Where I'm ending the last year of my TIC Engineer degree.
                     </h4>
                     <div className='iFrameContainer'>
+                        <span className='iFrameBackground'></span>
                         <img src={sanSebastianUniversityLogo} alt="Universidad San Sebastian Logo" height="220.5" width="284.5"/>
                     </div>
                 </div>

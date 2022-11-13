@@ -1,22 +1,26 @@
 import React from 'react';
 import TechnologiesStyles__Desktop from "./TechnologiesStyles__Desktop.scss";
-import reactIcon from "../../../assets/images/reactIcon.png";
-import expressIcon from "../../../assets/images/expressIcon.png"
-import mongoDBIcon from "../../../assets/images/mongoDBIcon.png";
-import nodeJsIcon from "../../../assets/images/nodeJsIcon.png";
-import pythonIcon from "../../../assets/images/pythonIcon.png";
-import pNetIcon from "../../../assets/images/pNetIcon.png";
 import { useInView  } from "react-intersection-observer";
 import ThreeScene from "../../ThreeComponents/ThreeScene.js"
 
 const TechnologiesDesktop = () => {
+    const {ref: techText, inView: inViewTechText} = useInView();
+    const {ref: techCarrousel, inView: inViewTechCarrousel} = useInView();
     return (
-        <div style={{width:"100%", height:"100vh", display:"flex", justifyContent:"space-evenly", alignContent:"center"}}>
-            <div style={{display:"flex", justifyContent:"center", alignContent:"center"}}>
-                <p >Esto sera una tarjeta</p>
+        <div className='techContainer'>
+            <div className="techText">
+                <div>
+                    <div ref={techText} className={inViewTechText?`entryFromUp`:``} style={{textAlign:"justify",lineHeight:"30px",marginBottom:"15px"}}>
+                        <h1> I feel really confident with MERN, </h1>
+                        <h3> however I'm always searching for some new technologies to learn. </h3>
+                    </div>
+                    <div  style={{textAlign:"justify",lineHeight:"30px"}}>
+                        <h1> Currently I really enjoy to make frontend development.</h1>
+                        <h3> but I can defend myself perfectly in backend. </h3>
+                    </div>
+                </div>
             </div>
-            <div style={{width:"40vw", height:"70vh", cursor:"pointer"}}>
-                TENGO QUE REFINAR LA ESFERA PQ QUEDO COMO HUEVO XD
+            <div ref={techCarrousel} className={`${"techViewport"} ${inViewTechCarrousel?`entryFromBottom`:``}`}>
                 <ThreeScene/>
             </div>
         </div>

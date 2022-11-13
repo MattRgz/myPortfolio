@@ -1,17 +1,19 @@
 import React from 'react';
 import NavStyles__Desktop__Menu from './NavStyles__Desktop__Menu.scss';
 import {Link} from "react-scroll";
+import { useInView  } from "react-intersection-observer";
 
 const NavDesktop = () => {
+    const {ref: scrolling, inView: projectSection} = useInView();
     return (
-        <div style={{display:'flex', backgroundColor:'rgba(150,150,150,0.2)', position:'relative',right:'0', left:'0',height:'100px', zIndex:"3"}}>
-            <div style={{display:'flex', flexGrow:'1', justifyContent:'center', alignItems:'end'}}>
+        <div ref={scrolling} className={`${projectSection?"imScrolling":""}` } style={{display:'flex', backgroundColor:'rgba(255,255,255,1)',position:"sticky",right:'0', left:'0',height:'12vh', zIndex:"1"}}>
+            <div className='logoBox' style={{display:'flex', flexGrow:'1', justifyContent:'center', alignItems:'end'}}>
                 <p style={{marginBottom:'10px'}}>LOGO</p>
             </div>
             <div style={{display:'flex',flexGrow:'3', justifyContent:'center',alignItems:'end', marginRight:'14%'}}>
                 <ul className='MainLinksContainer__Desktop'>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={-100} duration={500}>
+                        <Link style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={-150} duration={500}>
                             <p className='linkContainer'>
                                 Home
                             </p>
@@ -19,9 +21,9 @@ const NavDesktop = () => {
                         <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}}  to="proyectsId" spy={true} smooth={true} offset={-100} duration={500}>
+                        <Link style={{cursor:"pointer"}}  to="projectsId" spy={true} smooth={true} offset={-100} duration={500}>
                             <p className='linkContainer'>
-                                My proyects
+                                My projects
                             </p>
                         </Link>
                         <span className='bottomBorder'></span>
