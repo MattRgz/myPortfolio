@@ -3,15 +3,21 @@ import FormationStyles__Desktop from "./FormationStyles__Desktop.scss";
 import codingDojoCertificate from "../../../assets/codingDojoCertificate.pdf";
 import CurseraPython4EverybodyCertificate from "../../../assets/CurseraPython4Everybody.pdf";
 import sanSebastianUniversityLogo from "../../../assets/images/USS.png";
+import { useInView  } from "react-intersection-observer";
 
 const FormationDesktop = () => {
+    const {ref: title, inView: inViewTitle} = useInView();
+    const {ref: firstCard, inView: inView} = useInView();
+    const {ref: secondCard, inView: inViewSecondCard} = useInView();
+    const {ref: thirdCard, inView: inViewThirdCard} = useInView();
+    const {ref: fourthCard, inView: inViewFourthCard} = useInView();
     return (
         <div className='FormationContainer'>
-            <div className="FormationMainText">
+            <div ref={title} className="FormationMainText">
                 <h1> Some things wich I'm very proud ! 📑 </h1>
             </div>
             <div className="formationCardsContainer">
-                <div className='formationCards'>
+                <div ref={firstCard} className='formationCards'>
                     <h2 className='cardTitle'>
                         Coding Dojo Certificate
                     </h2>
@@ -26,7 +32,7 @@ const FormationDesktop = () => {
                         <iframe src={codingDojoCertificate} frameborder="0"  title="Matías Reyes Coding Dojo Certificate" allowfullscreen="true" height="220.5" width="284.5"></iframe>
                     </div>
                 </div>
-                <div className='formationCards'>
+                <div ref={secondCard} className='formationCards'>
                     <h2 className='cardTitle'>
                         Python 4 Everyone Certificate
                     </h2>
@@ -37,7 +43,7 @@ const FormationDesktop = () => {
                         <iframe src={CurseraPython4EverybodyCertificate} frameborder="0"  title="Matías Reyes Basic Python Certificate" allowfullscreen="true" height="220.5" width="284.5"></iframe>
                     </div>
                 </div>
-                <div className='formationCards'>
+                <div ref={thirdCard} className='formationCards'>
                     <h2 className='cardTitle'>
                          Ending TIC Engineering at USS.
                     </h2>
@@ -50,7 +56,7 @@ const FormationDesktop = () => {
                     </div>
                 </div>
             </div>
-            <div className='FormationEndTextContainer'>
+            <div ref={fourthCard} className='FormationEndTextContainer'>
                 <h4> 🤓 I considere myself a self-taught person, reason why I'm constantly improving my knowledgments in some react libraries, and Frontend tips. 🤓 </h4>
             </div>
         </div>
