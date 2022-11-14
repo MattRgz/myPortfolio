@@ -17,16 +17,16 @@ const MainView = () => {
                 <nav style={{position:'sticky', top:'0px',background:"white",zIndex:"3"}}>
                     <Nav__Desktop/>
                 </nav>
-                <header id='homeId' style={{height:'88vh',background:"white",position:"relative", zIndex:"-1"}}>
+                <header id='homeId' style={{height:'88vh',background:"white",position:"relative",zIndex:"-1"}}>
                     <HeaderDesktop/>
                 </header>
-                <main id='projectsId' style={{height:'90vh',background:"white",position:"relative", zIndex:"-1"}}>
+                <main id='projectsId' style={{height:'90vh',background:"white",position:"relative"}}>
                     <Main__Desktop/>
                 </main>
-                <section id='technologiesId' style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
+                <section id='technologiesId' style={{height:'90vh',position:"relative",background:"white"}}>
                     <TechnologiesDesktop/>
                 </section>
-                <section id='formationId'  style={{height:'90vh',position:"relative", zIndex:"-1",background:"white"}}>
+                <section id='formationId'  style={{height:'90vh',position:"relative",background:"white"}}>
                     <FormationDesktop/>
                 </section>
                 <section id='contactId'  style={{height:'92vh',position:"relative", background:"white"}}>

@@ -4,6 +4,8 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
+    z-index: 0;
+    position: relative;
 }
 
 .proyectAtLeft{
@@ -17,8 +19,6 @@
 }
 .proyectAtLeft p{
     margin-right: 15%;
-}
-.proyectAtLeft img{
     
 }
 .proyectAtRight{
@@ -27,14 +27,11 @@
     align-items: center;
     justify-content: end;
     position: relative;
-    width: 85%;
+    width: 100%;
 
 }
 .proyectAtRight p{
     margin-left: 15%;
-}
-.proyectAtRight img{
-    
 }
 
 .entryFromLeft{
@@ -73,4 +70,25 @@
         scale: 1;
         margin-left: 5%;
     }
+}
+.proyectContainer img{
+    width: 300px;
+    box-shadow: 1px 4px 10px 2px black;
+}
+.codeLinkButtonBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.codeLinkButton{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 32px;
+    box-shadow: 1px 1px 5px 1px black;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
 }
