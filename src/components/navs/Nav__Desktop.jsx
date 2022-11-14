@@ -13,7 +13,7 @@ const NavDesktop = () => {
             <div style={{display:'flex',flexGrow:'3', justifyContent:'center',alignItems:'end', marginRight:'14%'}}>
                 <ul className='MainLinksContainer__Desktop'>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={-150} duration={500}>
+                        <Link style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={-150} duration={700}>
                             <p className='linkContainer'>
                                 Home
                             </p>
@@ -21,7 +21,7 @@ const NavDesktop = () => {
                         <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}}  to="projectsId" spy={true} smooth={true} offset={-100} duration={500}>
+                        <Link style={{cursor:"pointer"}}  to="projectsId" spy={true} smooth={true} offset={-100} duration={700}>
                             <p className='linkContainer'>
                                 My projects
                             </p>
@@ -29,7 +29,7 @@ const NavDesktop = () => {
                         <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}}  to="technologiesId" spy={true} smooth={true} offset={-100} duration={500}>
+                        <Link style={{cursor:"pointer"}}  to="technologiesId" spy={true} smooth={true} offset={-100} duration={700}>
                             <p className='linkContainer'>
                                 Technologies
                             </p>
@@ -37,7 +37,7 @@ const NavDesktop = () => {
                         <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}}  to="formationId" spy={true} smooth={true} offset={-100} duration={500}>
+                        <Link style={{cursor:"pointer"}}  to="formationId" spy={true} smooth={true} offset={-100} duration={700}>
                             <p className='linkContainer'>
                                 Formation
                             </p>
@@ -45,7 +45,7 @@ const NavDesktop = () => {
                         <span className='bottomBorder'></span>
                     </li>
                     <li className='ItemList__Desktop'>
-                        <Link style={{cursor:"pointer"}}  to="contactId" spy={true} smooth={true} offset={-80} duration={500}>
+                        <Link style={{cursor:"pointer"}}  to="contactId" spy={true} smooth={true} offset={-80} duration={700}>
                             <p className='linkContainer'>
                                 Contact
                             </p>

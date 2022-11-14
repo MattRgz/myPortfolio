@@ -11,12 +11,12 @@ const TechnologiesDesktop = () => {
             <div className="techText">
                 <div>
                     <div ref={techText} className={inViewTechText?`entryFromUp`:``} style={{textAlign:"justify",lineHeight:"30px",marginBottom:"15px"}}>
-                        <h1> I feel really confident with MERN, </h1>
+                        <h1> I feel really confident working with MERN, </h1>
                         <h3> however I'm always searching for some new technologies to learn. </h3>
                     </div>
                     <div  style={{textAlign:"justify",lineHeight:"30px"}}>
-                        <h1> Currently I really enjoy to make frontend development.</h1>
-                        <h3> but I can defend myself perfectly in backend. </h3>
+                        <h1> Currently I really enjoy making frontend design & development.</h1>
+                        <h3> but I also have knowledge working with backend. </h3>
                     </div>
                 </div>
             </div>

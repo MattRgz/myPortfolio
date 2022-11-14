@@ -14,7 +14,7 @@ const FormationDesktop = () => {
     return (
         <div className='FormationContainer'>
             <div ref={title} className={`${"FormationMainText"} ${inViewTitle?'formationTitleOnView':''}`}>
-                <h1> Some things wich I'm very proud ! 📑 </h1>
+                <h1> Things which I'm very proud of! 📑 </h1>
             </div>
             <div className="formationCardsContainer">
                 <div ref={firstCard} className={`${"formationCards"} ${inViewFirstCard?'formationCardOneOnView':''}`}>
@@ -22,7 +22,7 @@ const FormationDesktop = () => {
                         Coding Dojo Certificate
                     </h2>
                     <h4 className='cardSubtitle'>
-                        Certificated at Coding Dojo LATAM, in MERN Full-Stack BootCamp. Where I participated with my classmates building two different proyects.
+                        Certificated at Coding Dojo LATAM, in MERN Full-Stack BootCamp. Where I built an individual project as well as a groupal one.
                     </h4>
                     <div className='iFrameContainer'>
                         <a href={codingDojoCertificate}>
@@ -37,7 +37,7 @@ const FormationDesktop = () => {
                         Python 4 Everyone Certificate
                     </h2>
                     <h4 className='cardSubtitle'>
-                        Certificated by Coursera at University of Michigan, in "Getting Starting with Python" course. Actually I'm improving my skills on my own.
+                        Certificated by Coursera at University of Michigan, in "Getting Starting with Python" course. Currently I'm improving my skills on my own.
                     </h4>
                     <div className='iFrameContainer'>
                         <iframe src={CurseraPython4EverybodyCertificate} frameborder="0"  title="Matías Reyes Basic Python Certificate" allowfullscreen="true" height="220.5" width="284.5"></iframe>
@@ -48,7 +48,7 @@ const FormationDesktop = () => {
                         Ending TIC Engineering at USS.
                     </h2>
                     <h4 className='cardSubtitle'>
-                        Currently, I´m student at San Sebastian University. Where I'm ending the last year of my TIC Engineer degree.
+                        Currently, I'm studying at San Sebastian University. Where I'm finishing the last year of my TIC Engineer degree.
                     </h4>
                     <div className='iFrameContainer'>
                         <span className='iFrameBackground'></span>
@@ -57,7 +57,7 @@ const FormationDesktop = () => {
                 </div>
             </div>
             <div ref={fourthCard} className={`${"FormationEndTextContainer"} ${inViewFourthCard?'formationEndtextOnView':''}`}>
-                <h4> 🤓 I considere myself a self-taught person, reason why I'm constantly improving my knowledgments in some react libraries, and Frontend tips. 🤓 </h4>
+                <h4> 🤓 I considerate myself a self-taught person, reason why I'm constantly improving my knowledgments in some React libraries, and Frontend tips. 🤓 </h4>
             </div>
         </div>
     );

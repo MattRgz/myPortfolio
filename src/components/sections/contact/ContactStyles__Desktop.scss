@@ -24,7 +24,12 @@
     align-items: center;
     width: 50px;
     position: relative;
+    border-radius: 150px;
+    z-index: 1;
     
+}
+.contactContainer li:hover{
+    box-shadow: 1px 1px 7px 7px darkgrey;
 }
 
 .contactContainer img{
@@ -35,32 +40,208 @@
 .contactContainer img:hover{
     object-fit: cover;
     scale: 1.2;
+
 }
 .showForm{
-    
-    animation: showFormAnimation 1s forwards;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    animation: showFormAnimation 2s forwards;
 }
 .hideForm{
-    animation: hideFormAnimation 1s forwards;
-    display: none;
+    animation: hideFormAnimation 2s forwards;
 }
 
 @keyframes showFormAnimation {
     0%{
         opacity: 0;
+        height: 200px;
     }
     50%{
-        display: relative;
+        height: 320px;
+        opacity: 1;
     }
     100%{
         opacity: 1;
+        height: 320px;
     }
 }
 @keyframes hideFormAnimation {
     0%{
         opacity: 1;
+        height: 320px;
     }
     100%{
         opacity: 0;
+        display: none;
+        height: 200px;
+    }
+}
+.formContainer{
+    background-color: black;
+    color: white;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 5px 4px darkgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contactTextContainer{
+    flex-grow:1;
+    height:215px;
+    width:100%;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    position:absolute;
+    z-index:1;
+    
+}
+.contactTextContainerActivated{
+    animation: contactTextAnimation 2s forwards;
+}
+@keyframes contactTextAnimation {
+    0%{
+    }
+    100%{
+        margin-bottom:410px;
+    }
+}
+.contactTextContainerDesactivated{
+    animation: contactTextDesanimation 2s forwards;
+}
+@keyframes contactTextDesanimation {
+    0%{
+        margin-bottom:410px;
+    }
+    100%{
+        margin-bottom:0;
+    }
+}
+
+.inputBoxes{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.dataBoxes{
+    width: 68%;
+    display: flex;
+    justify-content: end;
+}
+.textAreaBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items:center;
+    width: 100%;
+    height: 65%;
+}
+.textAreaDataBoxes{
+    height: 70%;
+    width: 60%;
+}
+.textAreaDataBoxes textarea{
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    height: 70px;
+    resize: none;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.textAreaErrorBox{
+    width: 100%;
+    height: 20px;
+    font-size: 14px;
+}
+.dataBoxes label{
+    margin-right: 10px;
+}
+.dataBoxes input{
+    border-radius: 5px;
+    border: none;
+    width: 40%;
+}
+.errorBoxes{
+    width: 22%;
+    font-size: 14px;
+}
+.inputBtn{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.toTheTopBtn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 100px ;
+}
+.leftArrowPart{
+    width: 15px;
+    height: 2px;
+    margin-top: 7px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(-30deg);
+}
+.rightArrowPart{
+    width: 15px;
+    margin-left: 12px;
+    margin-top: 7px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transform: rotate(30deg);
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+.toTheTopBtn p{
+    margin-top: 15px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+.toTheTopBtn{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    cursor: pointer;
+}
+.toTheTopBtn:hover{
+    animation: toTheTopAnimation 1s forwards;
+}
+.toTheTopBtn:not( :hover ){
+    animation: toTheTopAnimationDisable 1s forwards;
+}
+@keyframes toTheTopAnimation {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.15;
+    }
+}
+@keyframes toTheTopAnimationDisable {
+    0%{
+        scale: 1.15;
+    }
+    100%{
+        scale: 1;
     }
 }

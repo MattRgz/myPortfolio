@@ -14,7 +14,7 @@ const MainView = () => {
     return (
         <div>
             <div className="desktop__view">
-                <nav style={{position:'sticky', top:'0px',background:"white",zIndex:"1"}}>
+                <nav style={{position:'sticky', top:'0px',background:"white",zIndex:"3"}}>
                     <Nav__Desktop/>
                 </nav>
                 <header id='homeId' style={{height:'88vh',background:"white",position:"relative", zIndex:"-1"}}>
