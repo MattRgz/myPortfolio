@@ -1,21 +1,31 @@
 import React,{useState} from 'react';
+import emailjs from 'emailjs-com';
 import ContactStyles__Desktop from "./ContactStyles__Desktop.scss";
 import githubContact from "../../../assets/images/githubContact.png";
 import linkedInContact from "../../../assets/images/linkedInContact.png";
 import mailContact from "../../../assets/images/mailContact.png";
 import {useForm} from "react-hook-form";
 import {Link} from "react-scroll";
+import { useRef } from 'react';
 
 
 const ContactDesktop = () => {
+    const form = useRef();
     const [formActive, setFormActive] = useState(false);
     const activatingForm = () =>{
         setFormActive(!formActive)
     }
     const {register, handleSubmit,formState:{errors}} = useForm();
 
-    const onSubmit = (data) =>{
-        console.log(data);
+    const onSubmit = (e) =>{
+        console.log(e);
+        emailjs.sendForm('service_tfnbbq8', 'template_1cwfvoq', form.current, 'jaBmdcSrJfSOGJSvE')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      form.current.reset();
     }
 
     return (
@@ -44,7 +54,7 @@ const ContactDesktop = () => {
             </div>
             <div style={{height:"200px", position:"relative", top:"0"}}>
                     <div className={` ${"formContainer"} ${formActive?'showForm':'hideForm'}`}>
-                        <form onSubmit={handleSubmit(onSubmit)} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',height:'100%',width:'100%'}}>
+                        <form onSubmit={handleSubmit(onSubmit)} ref={form} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',height:'100%',width:'100%'}}>
                             <div  className='inputBoxes'>
                                 <div className='dataBoxes'>
                                     <label>Name:</label>
