@@ -32,8 +32,10 @@ const MainView = () => {
                 <section id='contactId'  style={{height:'92vh',position:"relative", background:"white"}}>
                     <ContactDesktop/>
                 </section>
-                <footer style={{height:'20vh', background:"darkgold"}}>
-
+                <footer style={{display:"flex",height:'20vh', background:"black",color:"white",alignItems:"end"}}>
+                    <div style={{width:"100%",heigth:"50%",marginBottom:"30px",fontSize:"13px",justifyContent:"center"}}>
+                        © Copyright <a style={{textDecoration:"none", color:"blanchedalmond"}} href="https://github.com/MattRgz">Matías</a> . All Rights Reserved
+                    </div>
                 </footer>
             </div>
             <div  className="mobile__view">
