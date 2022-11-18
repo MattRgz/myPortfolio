@@ -7,7 +7,7 @@ import mailContact from "../../../assets/images/mailContact.png";
 import {useForm} from "react-hook-form";
 import {Link} from "react-scroll";
 import { useRef } from 'react';
-
+import Swal from 'sweetalert2'
 
 const ContactDesktop = () => {
     const form = useRef();
@@ -25,9 +25,13 @@ const ContactDesktop = () => {
       }, (error) => {
           console.log(error.text);
       });
+      Swal.fire(
+        '¡Muchas gracias!',
+        'Correo enviado de manera exitosa.',
+        'success'
+      )
       form.current.reset();
     }
-
     return (
         <div className='contactContainer'>
             <div className={`${'contactTextContainer'}  ${formActive?'contactTextContainerActivated':'contactTextContainerDesactivated'}`}>
