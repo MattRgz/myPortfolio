@@ -8,6 +8,7 @@ import HeaderMobile from '../components/header/Header__Mobile';
 import TechnologiesDesktop from '../components/sections/technologies/Technologies__Desktop';
 import FormationDesktop from '../components/sections/formation/Formation__Desktop';
 import ContactDesktop from '../components/sections/contact/Contact__Desktop';
+import MainMobile from '../components/main/Main__Mobile';
 
 
 const MainView = () => {
@@ -39,14 +40,14 @@ const MainView = () => {
                 </footer>
             </div>
             <div  className="mobile__view">
-                <nav style={{position:'sticky', top:'0px'}}>
+                <nav style={{position:'sticky', top:'0px',zIndex:"3"}}>
                     <Nav__Mobile/>
                 </nav>
-                <header style={{position:"absolute"}}>
+                <header style={{position:"relative"}}>
                     <HeaderMobile/>
                 </header>
-                <main>
-
+                <main style={{position:"relative",height:'270vh'}}>
+                    <MainMobile/>
                 </main>
                 <section>
 

@@ -1,0 +1,85 @@
+.proyectContainerMobile{
+ height: 100%;
+}
+.proyectAtLeftMobile{
+    height: 90vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+}
+.proyectAtLeftMobile p{
+    width: 100%;
+    color: white;
+    text-align: justify;
+    
+}
+
+.proyectAtLeftMobile img{
+    width: 400px;
+    border-radius: 30px;
+    margin-left: 25px;
+}
+.proyectAtRightMobile{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+
+}
+.proyectAtRightMobile p{
+    width: 100%;
+    color: white;
+    text-align: justify;
+
+}
+.proyectAtRightMobile img{
+    border-radius: 30px;
+    width: 400px;
+}
+.projectPic{
+    margin-bottom: 25px;
+}
+.entryFromLeftMobile{
+
+    animation: animatedLentry 2s forwards;
+}
+.entryFromRightMobile{
+    
+    animation: animatedRentry 2s forwards;
+}
+
+@keyframes animatedLentry {
+    0%{
+        opacity: 0;
+        margin-left: -5%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        scale: 1;
+        margin-left: 0;
+    }
+}
+
+@keyframes animatedRentry {
+    0%{
+        opacity: 0;
+        right:-5%;
+    }
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        scale: 1;
+        right:0;
+    }
+}

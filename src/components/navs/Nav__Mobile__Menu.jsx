@@ -1,5 +1,7 @@
 import React from 'react';
 import NavStyles__Mobile__Menu from './NavStyles__Mobile__Menu.scss';
+import githubContact from '../../assets/images/githubIconMobile.png';
+import linkedInContact from '../../assets/images/linkedInIconMobile.png';
 
 const NavMobileMenu = () => {
     return (
@@ -12,12 +14,12 @@ const NavMobileMenu = () => {
                     <ul>
                         <a href="#">
                             <li>
-                                <p className='Mobile__LinkContainer'>Me</p>
+                                <p className='Mobile__LinkContainer'>Home</p>
                             </li>
                         </a>
                         <a href="#">
                             <li>
-                                <p className='Mobile__LinkContainer'>Formation</p>
+                                <p className='Mobile__LinkContainer'>My Projects</p>
                             </li>
                         </a>
                         <a href="#">
@@ -27,14 +29,28 @@ const NavMobileMenu = () => {
                         </a>
                         <a href="#">
                             <li>
-                                <p className='Mobile__LinkContainer'>Otro link</p>
+                                <p className='Mobile__LinkContainer'>Formation</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <p className='Mobile__LinkContainer'>Contact</p>
                             </li>
                         </a>
                     </ul>
                 </div>
-                <div className='socialMediaContainer'>
-                    <span className='socialMediaIcon'>Instagram</span> &nbsp; <span className='socialMediaIcon'>GitHub</span> &nbsp; <span className='socialMediaIcon'>LinkedIn</span>
-                </div>
+                <ul className='socialMediaContainer'>
+                        <li>
+                            <a href="https://github.com/MattRgz" target="_blank" rel="noreferrer">
+                                <img src={githubContact} alt="Github" />    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/matiasreyesgonzalez/" target="_blank" rel="noreferrer">
+                                <img src={linkedInContact} alt="LinkedIn" />
+                            </a>
+                        </li>
+                    </ul>
             </main>
         </div>
     );

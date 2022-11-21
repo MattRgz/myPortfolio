@@ -9,7 +9,7 @@ const HeaderMobile = () => {
             <div className="overlayMobile"></div>
             <div className="textoMobile">
                 <div className='textBoxMobile'>
-                <img className='imgMobile' src={profileImg} alt="Profile Image" />
+                    <img className='imgMobile' src={profileImg} alt="Profile Image" />
                     <h1>Hi!</h1>
                     <h4>My name is</h4> 
                     <h2>Matías Reyes,</h2>

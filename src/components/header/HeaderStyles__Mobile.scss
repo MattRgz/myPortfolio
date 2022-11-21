@@ -2,7 +2,6 @@
   width: 100%;
   height: 88vh;
   position: relative;
-  z-index: -2;
 }
 
 .videoMobile{
@@ -58,7 +57,9 @@
   font-size: 2em;
   margin-bottom: 15px;
 }
-
+.textBoxMobile{
+  color: white;
+}
 // .texto .cursor{
 //   top: 0;
 //   left: 0;
@@ -68,7 +69,7 @@
 // }
 
 .textoMobile .imgMobile{
-  border-radius: 600px;
+  border-radius: 30px;
   animation: profilePictureMobile 1s ;
 }
 

@@ -1,11 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .mainContainer{
     position: fixed;
-    z-index: 2;
     background: -webkit-linear-gradient(to bottom, #1e1e1e 40%,#2c3e50 60%); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #1e1e1e 20%,#2c3e50 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     width: 40%;
@@ -22,6 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 .linkList{
@@ -30,10 +31,12 @@
     text-align: start;
     margin-top: 30px;
     position: relative;
-    z-index: 3;
+    
 }
 .Mobile__LinkContainer{
     margin-left: 50px;
+    color: white;
+    
 
 }
 .linkList ul li{
@@ -49,8 +52,17 @@
 .socialMediaContainer{
     height: 40%;
     margin-top: 50px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .socialMediaIcon{
     height: 100%;
     margin: 10px;
+}
+.socialMediaContainer img{
+    object-fit: cover;
+    width: 40px;
+    cursor: pointer;
 }

@@ -14,11 +14,16 @@
     align-items: center;
     justify-content: start;
     position: relative;
-    width: 85%;
+    width: 100%;
 
 }
 .proyectAtLeft p{
-    margin-right: 15%;
+    width: 100%;
+    
+}
+.proyectAtLeft img{
+    width: 100%;
+    margin-left: 25px;
     
 }
 .proyectAtRight{
@@ -27,11 +32,17 @@
     align-items: center;
     justify-content: end;
     position: relative;
-    width: 80%;
+    width: 100%;
 
 }
 .proyectAtRight p{
-    margin-left: 15%;
+    width: 100%;
+    margin-left: 25px;
+
+}
+.proyectAtRight img{
+    width: 100%;
+    
 }
 
 .entryFromLeft{
@@ -46,21 +57,21 @@
 @keyframes animatedLentry {
     0%{
         opacity: 0;
-        margin-left: 9%;
+        margin-left: 0%;
     }
     50%{
         opacity: 1;
     }
     100%{
         scale: 1;
-        margin-left: 14%;
+        margin-left: 5%;
     }
 }
 
 @keyframes animatedRentry {
     0%{
         opacity: 0;
-        margin-left: 10%;
+        right:0%;
     }
     50%{
         opacity: 1;
@@ -68,7 +79,7 @@
     }
     100%{
         scale: 1;
-        margin-left: 5%;
+        right:5%;
     }
 }
 .proyectContainer img{
