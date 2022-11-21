@@ -9,6 +9,8 @@ import TechnologiesDesktop from '../components/sections/technologies/Technologie
 import FormationDesktop from '../components/sections/formation/Formation__Desktop';
 import ContactDesktop from '../components/sections/contact/Contact__Desktop';
 import MainMobile from '../components/main/Main__Mobile';
+import TechnologiesMobile from '../components/sections/technologies/Technologies__Mobile';
+import FormationMobile from '../components/sections/formation/Formation__Mobile';
 
 
 const MainView = () => {
@@ -48,9 +50,15 @@ const MainView = () => {
                 </header>
                 <main style={{position:"relative",height:'270vh'}}>
                     <MainMobile/>
-                </main>
-                <section>
-
+                </main >
+                <section style={{position:"relative",height:'90vh'}}>
+                    <TechnologiesMobile/>
+                </section>
+                <section style={{position:"relative",height:'270vh'}}>
+                    <FormationMobile/>
+                </section>
+                <section style={{height:'80vh',position:"relative"}}>
+                    
                 </section>
                 <footer>
 

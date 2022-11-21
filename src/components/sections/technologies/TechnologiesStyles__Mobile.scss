@@ -1,0 +1,71 @@
+.techViewportMobile{
+    display: flex;
+    width:80%;
+    height:70%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.techTextMobile{
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 25%;
+    width: 80%;
+    text-align: justify;
+}
+.whiteBackground{
+    background: rgba(145, 145, 145, 0.575);
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    border-radius: 35px;
+}
+.techContainerMobile{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    color: white;
+}
+
+.entryFromUp{
+
+    animation: animatedUentry 2s forwards;
+}
+.entryFromBottom{
+    
+    animation: animatedBentry 2s forwards;
+}
+
+@keyframes animatedUentry {
+    0%{
+        opacity: 0;
+        margin-bottom: 10%;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        scale: 1;
+        margin-bottom: 0%;
+    }
+}
+
+@keyframes animatedBentry {
+    0%{
+        opacity: 0;
+        margin-top: 10%;
+    }
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        scale: 1;
+        margin-top: 0%;
+    }
+}

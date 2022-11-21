@@ -9,7 +9,7 @@ const TechnologiesDesktop = () => {
     return (
         <div className='techContainer'>
             <div className="techText">
-                <div>
+                <div style={{marginLeft:'35px'}}>
                     <div ref={techText} className={inViewTechText?`entryFromUp`:``} style={{textAlign:"justify",lineHeight:"30px",marginBottom:"15px"}}>
                         <h1> I feel really confident working with MERN, </h1>
                         <h3> however I'm always searching for some new technologies to learn. </h3>

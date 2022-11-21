@@ -1,0 +1,28 @@
+.FormationContainerMobile{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    height: 100%;
+}
+.formationCardsContainerMobile{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formationCardsMobile{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 15px;
+}
+.FormationMainTextMobile{
+    margin-bottom: 100px;
+}
+.cardTitleMobile{
+    margin-bottom: 30px;
+}
+.cardSubtitleMobile{
+    margin-bottom: 25px;
+}
