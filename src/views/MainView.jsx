@@ -11,6 +11,7 @@ import ContactDesktop from '../components/sections/contact/Contact__Desktop';
 import MainMobile from '../components/main/Main__Mobile';
 import TechnologiesMobile from '../components/sections/technologies/Technologies__Mobile';
 import FormationMobile from '../components/sections/formation/Formation__Mobile';
+import ContactMobile from '../components/sections/contact/Contact__Mobile';
 
 
 const MainView = () => {
@@ -45,23 +46,25 @@ const MainView = () => {
                 <nav style={{position:'sticky', top:'0px',zIndex:"3"}}>
                     <Nav__Mobile/>
                 </nav>
-                <header style={{position:"relative"}}>
+                <header id='homeIdMobile' style={{position:"relative"}}>
                     <HeaderMobile/>
                 </header>
-                <main style={{position:"relative",height:'270vh'}}>
+                <main id='projectsIdMobile' style={{position:"relative",height:'270vh'}}>
                     <MainMobile/>
                 </main >
-                <section style={{position:"relative",height:'90vh'}}>
+                <section id='technologiesIdMobile' style={{position:"relative",height:'90vh'}}>
                     <TechnologiesMobile/>
                 </section>
-                <section style={{position:"relative",height:'270vh'}}>
+                <section id='formationIdMobile' style={{position:"relative",height:'270vh'}}>
                     <FormationMobile/>
                 </section>
-                <section style={{height:'80vh',position:"relative"}}>
-                    
+                <section id='contactIdMobile' style={{height:'75vh',position:"relative"}}>
+                    <ContactMobile/>
                 </section>
-                <footer>
-
+                <footer style={{height:'5vh',position:"relative"}}>
+                    <div style={{color:"white",width:"100%",heigth:"50%",marginBottom:"30px",fontSize:"13px",justifyContent:"center"}}>
+                        © Copyright <a style={{textDecoration:"none", color:"blanchedalmond"}} href="https://github.com/MattRgz">Matías</a> . All Rights Reserved
+                    </div>
                 </footer>
             </div>
         </div>

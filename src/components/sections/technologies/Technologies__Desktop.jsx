@@ -20,8 +20,9 @@ const TechnologiesDesktop = () => {
                     </div>
                 </div>
             </div>
-            <div ref={techCarrousel} className={`${"techViewport"} ${inViewTechCarrousel?`entryFromBottom`:``}`}>
+            <div ref={techCarrousel} className={`${"techViewport"} ${inViewTechCarrousel?`entryFromBottom`:``}`} style={{cursor:'pointer'}}>
                 <ThreeScene/>
+                
             </div>
         </div>
     );

@@ -1,9 +1,10 @@
-import { createRoot } from 'react-dom/client'
-import React, { Suspense, useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-// import {OrbitControls} from "@react-three/drei"
+import { createRoot } from 'react-dom/client';
+import React, { Suspense, useRef, useState } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { useLoader } from '@react-three/fiber';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import {OrbitControls} from "@react-three/drei";
+import {OrthographicCamera} from "@react-three/drei";
 
 function TechSphere(props) {
   const gltf = useLoader(GLTFLoader, '/TechSphere/TechSphere.gltf')
@@ -11,12 +12,13 @@ function TechSphere(props) {
   useFrame((state, delta) => {
       (ref.current.rotation.y += 0.005);
   })
+  
   return (
     <primitive
       ref= {ref} 
       object={gltf.scene} 
       scale={5}
-      />
+    />
   )
 }
   
@@ -50,11 +52,12 @@ function TechSphere(props) {
 export default function ThreeScene() {
     return (
     <Canvas camera={{fov: 50,position:[0,0,1]}}>
-        <ambientLight intensity={0.1} color="white" />
+        <ambientLight intensity={0.5} color="white" />
         <directionalLight color="white" position={[0, 1, 10]} />
             <Suspense>
                 <TechSphere position={[0,0,0]} scale={2}/>
             </Suspense>
+        <OrbitControls maxPolarAngle={Math.PI/2} enableZoom={false} minPolarAngle={Math.PI/2}/>
       </Canvas>
       
     )

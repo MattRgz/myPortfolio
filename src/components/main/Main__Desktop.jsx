@@ -27,6 +27,13 @@ const MainDesktop = () => {
                                 </div>
                             </button>
                         </a>
+                        <a target="_blank"  rel="noreferrer" href="#">
+                            <button className='codeLinkButton' style={{marginLeft:'15px',display:"flex",alignItems:'center',justifyContent:'center'}}>
+                                <p>
+                                    Visit Project
+                                </p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <img src={GestorNPic} alt="GestorN" />
@@ -44,6 +51,13 @@ const MainDesktop = () => {
                                         {`${"Code </>"}`}
                                     </p>
                                 </div>
+                            </button >
+                        </a>
+                        <a target="_blank"  rel="noreferrer" href="#">
+                            <button className='codeLinkButton' style={{marginLeft:'15px',display:"flex",alignItems:'center',justifyContent:'center'}}>
+                                <p>
+                                    Visit Project
+                                </p>
                             </button>
                         </a>
                     </div>
@@ -61,6 +75,13 @@ const MainDesktop = () => {
                                         {`${"Code </>"}`}
                                     </p>
                                 </div>
+                            </button>
+                        </a>
+                        <a target="_blank"  rel="noreferrer" href="#">
+                            <button className='codeLinkButton' style={{marginLeft:'15px',display:"flex",alignItems:'center',justifyContent:'center'}}>
+                                <p>
+                                    Visit Project
+                                </p>
                             </button>
                         </a>
                     </div>
