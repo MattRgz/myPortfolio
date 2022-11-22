@@ -14,10 +14,18 @@
 .formContainerMobile{
     background-color: black;
     color: white;
-    width: 600px;
+    width: 100%;
     border-radius: 20px;
     border: 2px white solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.textAreaBoxMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items:center;
+    width: 100%;
+    height: 65%;
 }

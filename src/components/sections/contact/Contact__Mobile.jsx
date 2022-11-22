@@ -56,7 +56,7 @@ const ContactMobile = () => {
                     </ul>
                 </div>
             </div>
-            <div style={{height:"200px", position:"relative", top:"0"}}>
+            <div style={{height:"200px", position:"relative", top:"0",width:'100%'}}>
                     <div className={` ${"formContainerMobile"} ${formActive?'showForm':'hideForm'}`}>
                         <form onSubmit={handleSubmit(onSubmit)} ref={form} style={{display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center',height:'100%',width:'100%'}}>
                             <div  className='inputBoxes'>
@@ -85,7 +85,7 @@ const ContactMobile = () => {
                                     {errors.userMail?.type === 'pattern' && <p>Please, enter a valid E-Mail!</p>}
                                 </div>
                             </div>
-                            <div className='textAreaBox'>
+                            <div className='textAreaBoxMobile'>
                                 <div className='textAreaDataBoxes'>
                                     <label>Message:</label>
                                     <textarea {...register('message',

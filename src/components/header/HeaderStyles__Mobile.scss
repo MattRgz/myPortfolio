@@ -70,17 +70,17 @@
 
 .textoMobile .imgMobile{
   border-radius: 30px;
-  animation: profilePictureMobile 1s ;
+  // animation: profilePictureMobile 1s ;
 }
 
 
-@keyframes profilePictureMobile{
-  50%{
-    scale: 1.15;
-    margin-bottom: 10px;
-  }
-  100%{
-    scale: 1;
-  }
-}
+// @keyframes profilePictureMobile{
+//   50%{
+//     scale: 1.05;
+//     margin-bottom: 10px;
+//   }
+//   100%{
+//     scale: 1;
+//   }
+// }
 
