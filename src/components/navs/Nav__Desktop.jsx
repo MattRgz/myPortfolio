@@ -8,7 +8,7 @@ const NavDesktop = () => {
     return (
         <div ref={scrolling} className={`${projectSection?"imScrolling":""}` } style={{display:'flex', backgroundColor:'rgba(255,255,255,1)',position:"sticky",right:'0', left:'0',height:'12vh', zIndex:"1"}}>
             <div className='logoBox' style={{display:'flex', flexGrow:'1', justifyContent:'center', alignItems:'end'}}>
-                <p style={{marginBottom:'10px'}}>LOGO</p>
+                {/* <p style={{marginBottom:'10px'}}>LOGO</p> */}
             </div>
             <div style={{display:'flex',flexGrow:'3', justifyContent:'center',alignItems:'end', marginRight:'14%'}}>
                 <ul className='MainLinksContainer__Desktop'>

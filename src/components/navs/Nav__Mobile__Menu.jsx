@@ -10,7 +10,7 @@ const NavMobileMenu = () => {
     return (
         <div ref={scrolling} className={`mainContainer ${projectSection?"imScrolling":""}` }>
             <header className='logo'>
-                LOGO
+                {/* LOGO */}
             </header>
             <main >
                 <div className='linkList'>
