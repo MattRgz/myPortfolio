@@ -27,13 +27,13 @@ const MainDesktop = () => {
                                 </div>
                             </button>
                         </a>
-                        <a target="_blank"  rel="noreferrer" href="#">
+                        {/* <a target="_blank"  rel="noreferrer" href="#">
                             <button className='codeLinkButton' style={{marginLeft:'15px',display:"flex",alignItems:'center',justifyContent:'center'}}>
                                 <p>
                                     Visit Project
                                 </p>
                             </button>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 <img src={GestorNPic} alt="GestorN" />
@@ -53,13 +53,13 @@ const MainDesktop = () => {
                                 </div>
                             </button >
                         </a>
-                        <a target="_blank"  rel="noreferrer" href="#">
+                        {/* <a target="_blank"  rel="noreferrer" href="#">
                             <button className='codeLinkButton' style={{marginLeft:'15px',display:"flex",alignItems:'center',justifyContent:'center'}}>
                                 <p>
                                     Visit Project
                                 </p>
                             </button>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>
@@ -77,13 +77,13 @@ const MainDesktop = () => {
                                 </div>
                             </button>
                         </a>
-                        <a target="_blank"  rel="noreferrer" href="#">
+                        {/* <a target="_blank"  rel="noreferrer" href="#">
                             <button className='codeLinkButton' style={{marginLeft:'15px',display:"flex",alignItems:'center',justifyContent:'center'}}>
                                 <p>
                                     Visit Project
                                 </p>
                             </button>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 <img src={myPortfolioPic} alt="My potfolio" />
