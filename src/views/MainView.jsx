@@ -43,19 +43,19 @@ const MainView = () => {
                 </footer>
             </div>
             <div  className="mobile__view">
-                <nav style={{position:'sticky', top:'0px',zIndex:"3",width:'100vw', height:'100px'}}>
+                <nav style={{position:'sticky', top:'0px',zIndex:"1",width:'100vw', height:'100px',marginBottom:'50px'}}>
                     <Nav__Mobile/>
                 </nav>
-                <header id='homeIdMobile' style={{position:"relative",width:'100vw', height:'80vh'}}>
+                <header id='homeIdMobile' style={{position:"relative",width:'100vw', height:'80vh',marginBottom:'20px'}}>
                     <HeaderMobile/>
                 </header>
-                <main id='projectsIdMobile' style={{position:"relative",height:'270vh',width:'100vw'}}>
+                <main id='projectsIdMobile' style={{position:"relative",height:'270vh',width:'100vw',marginBottom:'20px'}}>
                     <MainMobile/>
                 </main >
-                <section id='technologiesIdMobile' style={{position:"relative",height:'90vh',width:'100vw'}}>
+                <section id='technologiesIdMobile' style={{position:"relative",height:'90vh',width:'100vw',marginBottom:'20px'}}>
                     <TechnologiesMobile/>
                 </section>
-                <section id='formationIdMobile' style={{position:"relative",height:'270vh',width:'100vw'}}>
+                <section id='formationIdMobile' style={{position:"relative",height:'270vh',width:'100vw',marginBottom:'20px'}}>
                     <FormationMobile/>
                 </section>
                 <section id='contactIdMobile' style={{height:'75vh',position:"relative",width:'100vw'}}>
