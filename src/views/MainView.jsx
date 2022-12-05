@@ -12,6 +12,7 @@ import MainMobile from '../components/main/Main__Mobile';
 import TechnologiesMobile from '../components/sections/technologies/Technologies__Mobile';
 import FormationMobile from '../components/sections/formation/Formation__Mobile';
 import ContactMobile from '../components/sections/contact/Contact__Mobile';
+import logoPositivo from '../assets/images/logoPositivo.png';
 
 
 const MainView = () => {
@@ -36,8 +37,9 @@ const MainView = () => {
                 <section id='contactId'  style={{height:'92vh',position:"relative", background:"white"}}>
                     <ContactDesktop/>
                 </section>
-                <footer style={{display:"flex",height:'20vh', background:"black",color:"white",alignItems:"end"}}>
-                    <div style={{width:"100%",heigth:"50%",marginBottom:"30px",fontSize:"13px",justifyContent:"center"}}>
+                <footer style={{display:"flex",height:'20vh', background:"black",color:"white",alignItems:"center", flexDirection:'column'}}>
+                    <img  style={{width:'96px', marginTop:'25px'}} src={logoPositivo} alt="Logo Matias Reyes" />
+                    <div style={{width:"100%",heigth:"50%",marginTop:"30px",fontSize:"13px",justifyContent:"center"}}>
                         © Copyright <a style={{textDecoration:"none", color:"blanchedalmond"}} href="https://github.com/MattRgz">Matías</a> . All Rights Reserved
                     </div>
                 </footer>
@@ -62,6 +64,7 @@ const MainView = () => {
                     <ContactMobile/>
                 </section>
                 <footer style={{height:'5vh',position:"relative",width:'100vw'}}>
+                <img  style={{width:'96px'}} src={logoPositivo} alt="Logo Matias Reyes" />
                     <div style={{color:"white",width:"100%",heigth:"50%",marginBottom:"30px",fontSize:"13px",justifyContent:"center"}}>
                         © Copyright <a style={{textDecoration:"none", color:"blanchedalmond"}} href="https://github.com/MattRgz">Matías</a> . All Rights Reserved
                     </div>

@@ -2,13 +2,14 @@ import React from 'react';
 import NavStyles__Desktop__Menu from './NavStyles__Desktop__Menu.scss';
 import {Link} from "react-scroll";
 import { useInView  } from "react-intersection-observer";
+import logoNegativo from "../../assets/images/logoNegativo.png";
 
 const NavDesktop = () => {
     const {ref: scrolling, inView: projectSection} = useInView();
     return (
         <div ref={scrolling} className={`${projectSection?"imScrolling":""}` } style={{display:'flex', backgroundColor:'rgba(255,255,255,1)',position:"sticky",right:'0', left:'0',height:'12vh', zIndex:"1"}}>
             <div className='logoBox' style={{display:'flex', flexGrow:'1', justifyContent:'center', alignItems:'end'}}>
-                {/* <p style={{marginBottom:'10px'}}>LOGO</p> */}
+                <img style={{width:'96px'}} src={logoNegativo} alt="Logo Matias Reyes" />
             </div>
             <div style={{display:'flex',flexGrow:'3', justifyContent:'center',alignItems:'end', marginRight:'14%'}}>
                 <ul className='MainLinksContainer__Desktop'>
