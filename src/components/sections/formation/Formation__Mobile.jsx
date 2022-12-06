@@ -13,11 +13,11 @@ const FormationMobile = () => {
     const {ref: fourthCardMobile, inView: inViewFourthCardMobile} = useInView();
     return (
         <div className='FormationContainerMobile'>
+            <div ref={titleMobile} className={`${"FormationMainTextMobile"} ${inViewTitleMobile?'formationTitleOnViewMobile':''}`}>
+                <h1> Things which I'm very proud of! 📑 </h1>
+            </div>
             <div className="formationCardsContainerMobile">
                 <div ref={firstCardMobile} className={`${"formationCardsMobile"} ${inViewFirstCardMobile?'formationCardOneOnViewMobile':''}`}>
-                    <div ref={titleMobile} className={`${"FormationMainTextMobile"} ${inViewTitleMobile?'formationTitleOnViewMobile':''}`}>
-                        <h1> Things which I'm very proud of! 📑 </h1>
-                    </div>
                     <h2 className='cardTitleMobile'>
                         Coding Dojo Certificate
                     </h2>

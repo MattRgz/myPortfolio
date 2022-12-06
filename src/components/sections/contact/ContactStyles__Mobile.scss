@@ -1,5 +1,4 @@
 .contactTextContainerMobile{
-    flex-grow:1;
     width:100%;
     background-color:black;
     display:flex;
@@ -14,12 +13,12 @@
 .formContainerMobile{
     background-color: black;
     color: white;
-    width: 100%;
     border-radius: 20px;
     border: 2px white solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .textAreaBoxMobile{
     display: flex;

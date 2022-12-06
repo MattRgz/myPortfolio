@@ -8,7 +8,7 @@ const TechnologiesDesktop = () => {
     const {ref: techCarrousel, inView: inViewTechCarrousel} = useInView();
     return (
         <div className='techContainer'>
-            <div className="techText">
+            <div className="techTextDesktop">
                 <div style={{marginLeft:'35px'}}>
                     <div ref={techText}  style={{textAlign:"justify",lineHeight:"30px",marginBottom:"15px"}}>
                         <h1> I feel really confident working with MERN, </h1>

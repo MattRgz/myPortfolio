@@ -104,17 +104,7 @@ const ContactMobile = () => {
                         </form>
                     </div>
             </div>
-            <Link className='toTheTopBtn' style={{cursor:"pointer"}} to="homeId" spy={true} smooth={true} offset={-150} duration={700}>
-                <p>
-                    Take me to the top!
-                </p>
-                <div className="arrow">
-                    <div>
-                        <span className='leftArrowPart'></span>
-                        <span className='rightArrowPart'></span>
-                    </div>
-                </div>
-            </Link>
+        
         </div>
     );
 }

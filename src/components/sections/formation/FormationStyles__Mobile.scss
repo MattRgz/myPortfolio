@@ -11,19 +11,24 @@
     flex-direction: column;
 }
 .formationCardsMobile{
-    height: 90vh;
+    height: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 85vw;
-}
-.FormationMainTextMobile{
-    margin-bottom: 100px;
+    font-size: 1em;
 }
 .cardTitleMobile{
-    margin-bottom: 30px;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 .cardSubtitleMobile{
     margin-bottom: 25px;
+}
+.iFrameContainerMobile{
+    width: 90%;
+}
+.iFrameContainerMobile iframe{
+    width: 100%;
 }

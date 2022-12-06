@@ -10,7 +10,7 @@ const TechnologiesMobile = () => {
         <div className='techContainerMobile'>
             <div className="techTextMobile">
                 <div>
-                    <div ref={techText} className={inViewTechText?`entryFromUp`:``} style={{textAlign:"justify",lineHeight:"30px",marginBottom:"15px"}}>
+                    <div ref={techText} className={inViewTechText} style={{textAlign:"justify",lineHeight:"30px",marginBottom:"15px"}}>
                         <h1> I feel really confident working with MERN, </h1>
                         <h3> however I'm always searching for some new technologies to learn. </h3>
                     </div>
@@ -20,7 +20,7 @@ const TechnologiesMobile = () => {
                     </div>
                 </div>
             </div>
-            <div ref={techCarrousel} className={`${"techViewportMobile"} ${inViewTechCarrousel?`entryFromBottom`:``}`}>
+            <div ref={techCarrousel} className={`${"techViewportMobile"}`}>
                 <span className='whiteBackground'></span>
                 <ThreeScene/>
             </div>

@@ -4,10 +4,18 @@
     height:80vh;
     align-items: center;
 }
-.techText{
+.techTextDesktop{
     display: flex;
     align-items: center;
 }
+.techTextDesktop
+    h1{
+        font-size:2em;
+    }
+.techTextDesktop
+    h3{
+        font-size: 1.4em;
+    }
 .techContainer{
     position: relative;
     width:100%;
@@ -17,6 +25,7 @@
     align-content:center;
     z-index: 1;
 }
+
 
 .entryFromUp{
 
