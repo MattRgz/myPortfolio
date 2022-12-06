@@ -45,25 +45,25 @@ const MainView = () => {
                 </footer>
             </div>
             <div  className="mobile__view">
-                <nav style={{position:'sticky', top:'0px',zIndex:"1",width:'100vw', height:'100px'}}>
+                <nav style={{position:'sticky', top:'0px',zIndex:"1",width:'100%', height:'100px'}}>
                     <Nav__Mobile/>
                 </nav>
-                <header id='homeIdMobile' style={{position:"relative",width:'100vw', height:'90vh', top: "1%"}}>
+                <header id='homeIdMobile' style={{position:"relative",width:'100%', height:'90vh', top: "1%"}}>
                     <HeaderMobile/>
                 </header>
-                <main id='projectsIdMobile' style={{position:"relative",height:'250vh',width:'100vw'}}>
+                <main id='projectsIdMobile' style={{position:"relative",height:'250vh',width:'100%'}}>
                     <MainMobile/>
                 </main >
-                <section id='technologiesIdMobile' style={{position:"relative",height:'110vh',width:'100vw',marginBottom:'20px'}}>
+                <section id='technologiesIdMobile' style={{position:"relative",height:'110vh',width:'100%',marginBottom:'20px'}}>
                     <TechnologiesMobile/>
                 </section>
-                <section id='formationIdMobile' style={{position:"relative",height:'200vh',width:'100vw',marginBottom:'20px'}}>
+                <section id='formationIdMobile' style={{position:"relative",height:'200vh',width:'100%',marginBottom:'20px'}}>
                     <FormationMobile/>
                 </section>
-                <section id='contactIdMobile' style={{height:'75vh',position:"relative",width:'100vw'}}>
+                <section id='contactIdMobile' style={{height:'75vh',position:"relative",width:'100%'}}>
                     <ContactMobile/>
                 </section>
-                <footer style={{height:'100%',position:"relative",width:'100vw'}}>
+                <footer style={{height:'100%',position:"relative",width:'100%'}}>
                     <img  style={{width:'96px'}} src={logoPositivo} alt="Logo Matias Reyes" />
                     <div style={{color:"white",width:"100%",heigth:"50%",marginBottom:"2%",fontSize:"13px",justifyContent:"center"}}>
                         © Copyright <a style={{textDecoration:"none", color:"blanchedalmond"}} href="https://github.com/MattRgz">Matías</a> . All Rights Reserved
