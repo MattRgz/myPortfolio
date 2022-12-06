@@ -13,7 +13,7 @@ const HeaderMobile = () => {
                     <h1>Hi!</h1>
                     <h4>My name is</h4> 
                     <h2>Matías Reyes,</h2>
-                    <h3>I´m a Full-Stack developer</h3> 
+                    <h3>I'm a Full-Stack developer</h3> 
                     <h4>currently studying to become a  </h4>
                     <h3>TIC Engineer!</h3>
                 </div>
