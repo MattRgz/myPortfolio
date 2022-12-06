@@ -14,7 +14,7 @@ const HeaderMobile = () => {
                     <h4>My name is</h4> 
                     <h2>Matías Reyes,</h2>
                     <h3>I´m a Full-Stack developer</h3> 
-                    <h4>currently studing to become a  </h4>
+                    <h4>currently studying to become a  </h4>
                     <h3>TIC Engineer!</h3>
                 </div>
             </div>

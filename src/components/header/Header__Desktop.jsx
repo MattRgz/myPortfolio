@@ -13,7 +13,7 @@ const HeaderDesktop = () => {
                         <h4 className='secondText'>My name is</h4> 
                         <h2 className='thirdText'>Matías Reyes,</h2>
                         <h3 className='fourText'>I'm a Full-Stack developer</h3> 
-                        <h4 className='fiveText'>currently studing to become a  </h4>
+                        <h4 className='fiveText'>currently studying to become a  </h4>
                         <h3 className='sixtText'>TIC Engineer!</h3>
                     </div> <span className='cursor'></span>
                     <img src={profileImg} alt="Profile Image" />
