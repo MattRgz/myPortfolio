@@ -63,7 +63,7 @@ const MainView = () => {
                 <section id='contactIdMobile' style={{height:'75vh',position:"relative",width:'100vw'}}>
                     <ContactMobile/>
                 </section>
-                <footer style={{height:'5vh',position:"relative",width:'100vw'}}>
+                <footer style={{height:'5vh',position:"relative",width:'100vw',marginBottom:"60px"}}>
                 <img  style={{width:'96px'}} src={logoPositivo} alt="Logo Matias Reyes" />
                     <div style={{color:"white",width:"100%",heigth:"50%",marginBottom:"30px",fontSize:"13px",justifyContent:"center"}}>
                         © Copyright <a style={{textDecoration:"none", color:"blanchedalmond"}} href="https://github.com/MattRgz">Matías</a> . All Rights Reserved
