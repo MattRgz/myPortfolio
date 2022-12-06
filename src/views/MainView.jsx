@@ -57,7 +57,7 @@ const MainView = () => {
                 <section id='technologiesIdMobile' style={{position:"relative",height:'110vh',width:'100vw',marginBottom:'20px'}}>
                     <TechnologiesMobile/>
                 </section>
-                <section id='formationIdMobile' style={{position:"relative",height:'250vh',width:'100vw',marginBottom:'20px'}}>
+                <section id='formationIdMobile' style={{position:"relative",height:'200vh',width:'100vw',marginBottom:'20px'}}>
                     <FormationMobile/>
                 </section>
                 <section id='contactIdMobile' style={{height:'75vh',position:"relative",width:'100vw'}}>

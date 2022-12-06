@@ -53,10 +53,11 @@ const FormationMobile = () => {
                     <div className='iFrameContainerMobile'>
                         <img src={sanSebastianUniversityLogo} alt="Universidad San Sebastian Logo" height="220.5" width="284.5"/>
                     </div>
-                    <div ref={fourthCardMobile} className={`${"FormationEndTextContainer"} ${inViewFourthCardMobile?'formationEndtextOnView':''}`}>
+                    
+                </div>
+                <div ref={fourthCardMobile} className={`${"FormationEndTextContainerMobile"} ${inViewFourthCardMobile?'formationEndtextOnView':''}`}>
                         <h4> 🤓 I considerate myself a self-taught person, reason why I'm constantly improving my knowledgments in some React libraries, and Frontend tips. 🤓 </h4>
                     </div>
-                </div>
             </div>
             
         </div>
