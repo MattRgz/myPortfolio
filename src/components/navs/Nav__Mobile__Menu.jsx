@@ -4,13 +4,14 @@ import githubContact from '../../assets/images/githubIconMobile.png';
 import linkedInContact from '../../assets/images/linkedInIconMobile.png';
 import {Link} from "react-scroll";
 import { useInView  } from "react-intersection-observer";
+import logoPositivo from '../../assets/images/logoPositivo.png'
 
 const NavMobileMenu = () => {
     const {ref: scrolling, inView: projectSection} = useInView();
     return (
         <div ref={scrolling} className={`mainContainer ${projectSection?"imScrolling":""}` }>
             <header className='logo'>
-                {/* LOGO */}
+                <img style={{width:'96px'}} src={logoPositivo} alt="Logo Matias Reyes" />
             </header>
             <main >
                 <div className='linkList'>

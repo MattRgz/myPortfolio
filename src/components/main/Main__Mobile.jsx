@@ -15,7 +15,7 @@ const MainMobile = () => {
     const {ref: thirdProyectMobile, inView: secondLeftEntryMobile} = useInView();
     return (
         <div className='proyectContainerMobile'>
-            <div ref={firstProyectMobile} className={`${"proyectAtLeftMobile"} ${leftEntryMobile?"entryFromLeftMobile":""}` }>
+            <div ref={firstProyectMobile} className={`${"proyectAtLeftMobile"}` }>
                 <div  style={{ textAlign:'justify',width:'70%'}}>
                     <p>My first project was called GestorN, It was born as an easy customizable management web for small business. It's important to say that it was my first BootCamp project, and I's mainly aimed at backend development. </p>
                     <div className='codeLinkButtonBox'>
@@ -33,7 +33,7 @@ const MainMobile = () => {
                 </div>
                 <img className='projectPic' src={GestorNPic} alt="GestorN" />
             </div>
-            <div ref={secondProyectMobile}  className={`${"proyectAtRightMobile"} ${rightEntryMobile?"entryFromRightMobile":""}` }>
+            <div ref={secondProyectMobile}  className={`${"proyectAtRightMobile"} ` }>
                 <img className='projectPic' src={taskifyPic} alt="Taskify" />
                 <div  style={{ textAlign:'justify',width:'70%'}}>
                     <p>Taskify is a "To Do List" coded as a second project for my BootCamp graduation. You can create a profile and manage a list with products previously created by the page's administrator. For this project I used design tools that can be reviewed on the documentation. </p>
@@ -51,7 +51,7 @@ const MainMobile = () => {
                     </div>
                 </div>
             </div>
-            <div ref={thirdProyectMobile}  className={`${"proyectAtLeftMobile"} ${secondLeftEntryMobile?"entryFromLeftMobile":""}` }>
+            <div ref={thirdProyectMobile}  className={`${"proyectAtLeftMobile"} ` }>
             <div  style={{ textAlign:'justify',width:'70%'}}>  
                     <p >Last but not least, my portfolio is my third project. I tried to give more importance to the frontend development at the same time that I learned how to design and implement 3D objects. Honestly, a great achievement for me.</p>
                     <div className='codeLinkButtonBox'>

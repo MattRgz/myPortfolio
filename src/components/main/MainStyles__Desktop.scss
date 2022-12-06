@@ -9,7 +9,7 @@
 }
 
 .proyectAtLeft{
-    height: 25%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -28,7 +28,7 @@
     
 }
 .proyectAtRight{
-    height: 25%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -46,14 +46,7 @@
     
 }
 
-.entryFromLeft{
 
-    animation: animatedLentry 2s forwards;
-}
-.entryFromRight{
-    
-    animation: animatedRentry 2s forwards;
-}
 
 @keyframes animatedLentry {
     0%{
@@ -64,7 +57,6 @@
         opacity: 1;
     }
     100%{
-        scale: 1;
         margin-left: 5%;
     }
 }
@@ -79,7 +71,6 @@
 
     }
     100%{
-        scale: 1;
         right:5%;
     }
 }

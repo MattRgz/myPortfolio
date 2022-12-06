@@ -28,7 +28,7 @@ const MainView = () => {
                 <main id='projectsId' style={{height:'90vh',background:"white",position:"relative"}}>
                     <Main__Desktop/>
                 </main>
-                <section id='technologiesId' style={{height:'90vh',position:"relative",background:"white"}}>
+                <section id='technologiesId' style={{height:'90vh',position:"relative",background:"white",zIndex:"0"}}>
                     <TechnologiesDesktop/>
                 </section>
                 <section id='formationId'  style={{height:'90vh',position:"relative",background:"white"}}>
